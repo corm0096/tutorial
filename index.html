@@ -1,0 +1,135 @@
+<!doctype html>
+<head>
+	<title>How to Skin an iRacing Vehicle</title>
+	<link rel="stylesheet" href="css/themes/tutorial.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="css/tutorial-pers.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+	<script src="mobile.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+</head>
+<body>
+	<div data-role="page" id="start" data-theme="a" >
+		<div data-role="header">
+			<h1>How to Skin an iRacing Vehicle: Home</h1>
+		</div>
+		<div data-role="content">
+			<p>iRacing allows a considerable amount of customization in terms of your personal livery, but there comes a time when you might want to really express yourself far beyond the basic paint schemes the simulation allows.  Fortunately, this is not only possible in iRacing, but not too difficult either.  Ideally, this tutorial will make the process easy.</p>
+			<p>Please note that this tutorial presumes that you have Photoshop already installed.  GIMP will likely work as well.</p>
+		</div>
+		<div data-role="footer">
+	       <a href="#about" id="aboutbutton" data-role="button" data-transition="slide">About</a>
+		   <a href="#page1" id="startbutton" data-role="button" data-transition="pop">Begin</a>
+		</div>
+	</div>
+	<div data-role="page" id="about" data-theme="a">
+		<div data-role="header">
+			<h1>About Daniel Cormier</h1>
+		</div>
+		<div data-role="content">
+			<p>Daniel Cormier, a first-year student in Algonquin College's Mobile Apps Development and Design programme, has a taste for simulated automotive racing to the point where he has constructed his own cockpit and digital instrument cluster. This is a bit beyond a hobby.</p>			
+		</div>
+		<div data-role="footer">
+			<a href="#start" data-role="button" data-transition="slide">Return</a>
+		</div>
+	</div>
+	<div data-role="page" id="page1" data-theme="a" data-dialog="true" data-close-btn="right">
+		<div data-role="header">
+			<h1>Page 1 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>Firstly, you'll need your customer ID.  This is easy to retrieve:  in the iRacing main menu, select "Account" and then "My Account".  In the upper right hand corner will be your customer ID, a six-digit figure.  Note this down, as we need this later.</p>			
+		</div>
+		<div data-role="footer">
+			<a href="#page2" class="next" data-role="button" data-transition="flip">Next</a>
+		</div>
+	</div>
+	<div data-role="page" id="page2" data-theme="a" data-dialog="true" data-close-btn="right">
+		<div data-role="header">
+			<h1>Page 2 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>Secondly, we need to get the template file for the car itself.  iRacing helpfully provides these in Photoshop format.</p>
+			<p>Select "Account", then "Customize Paint Schemes", and then the vehicle you wish to edit.  In this menu, you could pick one of the predefined styles and assign corporate sponsorship.  It's worth it to do this anyway, as this serves as a default for those who aren't subscribed to a custom livery service.  Additionally, this is where you could choose a font and colour for your racing numbers.  In this case, I've selected the Camping World 2011 Chevy Silverado, and my font is a yellow-to-green gradient.</p>
+			<img class="tutpic" src="img/download.jpg">
+		</div>
+		<div data-role="footer">
+			<a href="#page1" class="prev" data-role="button" data-transition="flip">Prev</a>
+			<a href="#page3" class="next" data-role="button" data-transition="flip">Next</a>
+		</div>
+	</div>
+	<div data-role="page" id="page3" data-theme="a" data-dialog="true" data-close-btn="right">
+		<div data-role="header">
+			<h1>Page 3 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>The templates come with a lot of useful information to help make sharper graphics.  There is the red layer which shows the location of predefined graphics the simulation will apply to your vehicle, and the blue layers are free to be worked on.</p>
+			<p>Some useful detail:  The "wire" layer shows the polygons of the actual vehicle, which makes it easier to wrap graphical elements from the hood to the fenders, for instance.</p>
+			<p>Sponsor Blocks are where the sponsors you chose (Hellmans Mayonnaise and Popsicle, in my case) would go normally.</p>
+			<p>Contigs are the various little corporate sponsorship stickers.  Unlike the sponsorship decals, these will be rendered atop your livery, no matter what.</p>
+			<p>Car Decal Stamps contains coarse details such as the headlamps and front fascia; Shadows contains fine details, such as the seams between body panels.</p>
+			<p>Finally, Number Block Location shows where the car's racing number will be placed.  These numbers are assigned on a per-race basis and can not be changed, but the colour and font can be, in the previous step.</p>
+			<img class="tutpic" src="img/tutorial2.jpg">
+		</div>
+		<div data-role="footer">
+			<a href="#page2" class="prev" data-role="button" data-transition="flip">Prev</a>
+			<a href="#page4" class="next" data-role="button" data-transition="flip">Next</a>
+		</div>
+	</div>
+	<div data-role="page" id="page4" data-theme="a" data-dialog="true" data-close-btn="right">
+			<div data-role="header">
+			<h1>Page 4 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>Now it's time to paint!  There are a number of graphical items that show up in the blue layers of the template, some of which are easily missed.  Typically in these templates, the rollbar colour is set as a little square somewhere in a remote corner of the file.  It may not be the end of the world to miss it, but a painted rollbar can add to the style and it's often those little details that matter.</p>
+			<img class="tutpic" src="img/tutorial3.jpg">			
+		</div>
+		<div data-role="footer">
+			<a href="#page3" class="prev" data-role="button" data-transition="flip">Prev</a>
+			<a href="#page5" class="next" data-role="button" data-transition="flip">Next</a>
+
+		</div>
+	</div>
+	<div data-role="page" id="page5" data-theme="a" data-dialog="true" data-close-btn="right">
+
+		<div data-role="header">
+			<h1>Page 5 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>Ready to save your masterpiece?  Save this file as "Targa" format, 24 bits, with RLE compression.  And the filename?  That will be your customer ID.</p>
+			<p>The location of the file is a bit misleading.  In Windows, there will be an iRacing directory structure under the Documents tab.  While your vehicle will be listed under "paint", it won't work; there's a "cars" subdirectory beneath that, with those vehicles listed again.</p>
+			<img class="tutpic" src="img/tutorial5.jpg">		
+		</div>
+		<div data-role="footer">
+			<a href="#page4" class="prev" data-role="button" data-transition="flip">Prev</a>
+			<a href="#page6" class="next" data-role="button" data-transition="flip">Next</a>
+		</div>
+	</div>
+	<div data-role="page" id="page6" data-theme="a" data-dialog="true" data-close-btn="right">
+
+		<div data-role="header">
+			<h1>Page 6 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>Make sure it looks good!  Fire up the simulator, load a test track, and gaze upon your handiwork.  It sometimes takes several tries to get it perfect.  This particular example took around ten hours of work.</p>		<img class="tutpic" src="img/final-horseflank.jpg">		
+		</div>
+		<div data-role="footer">
+			<a href="#page5" class="prev" data-role="button" data-transition="flip">Prev</a>
+			<a href="#page7" class="next" data-role="button" data-transition="flip">Next</a>
+		</div>
+	</div>
+	<div data-role="page" id="page7" data-theme="a" data-dialog="true" data-close-btn="right">
+
+		<div data-role="header">
+			<h1>Page 7 of 7</h1>
+		</div>
+		<div data-role="content">
+			<p>Now that it's done, you can send your targa file to your friends, who will save it as you have, or to custom livery exchange services, such as "Trading Paints".  This service allows people you've never met to download your paintjob automatically!  This can make races feel that much more personal, as you'll be able to identify your racing nemesis that much more readily--and they, of course, can see you coming more readily as well.</p>			
+		</div>
+		<div data-role="footer">
+			<a href="#page6" class="prev" data-role="button" data-transition="flip">Prev</a>
+		</div>
+	</div>
+</body>
